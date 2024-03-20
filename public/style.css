@@ -36,7 +36,7 @@ body {
 .name-input {
     font-size: 24px;
     font-weight: 700;
-    color: #7e7e7e;
+    color: #222020;
     flex-grow: 1;
     border: none;
     margin: 0px 12px;
@@ -121,4 +121,31 @@ margin-top: 4px;
 .clients-total{
     margin:20px 0;
     color: #7e7e7e;
+}
+
+@media (max-width: 768px) {
+    .main{
+        display:flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 80vh;
+
+    }
+    .name-input {
+        color: #222020;
+        background-color: #ebebeb;
+    }
+    .message-container {
+            display: flex;
+            flex-direction: column;
+            background-color: #f6f6f6;
+            width: 95vw;
+            height: 75vh;
+            overflow-y: scroll;
+            overflow-x: hidden;
+    
+        }
+    .message-form {
+        width:95vw;
+    }
 }
